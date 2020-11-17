@@ -1,14 +1,35 @@
+html {
+  min-height: 100%;
+}
 
 body {
-  background-color: #00e1ff;
+  background: rgb(131,58,180);
+  background: linear-gradient(13deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%);
+  /* background-size: 100% */
+  width: 100%;
 }
- 
+
+
+/*
+.pageWrapper {
+  background: rgb(131,58,180);
+  background: linear-gradient(13deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+*/
+
 .pageContainer {
-  width: 1000px;
+  overflow: auto;
+  width: 100%;
   margin: 20px auto 0 auto;
   padding: 20px;
   background-color: #000000;
 }
+
+
  
 .imageContainer {
   float: left;
@@ -26,22 +47,21 @@ img {
   width: 50%;
 }
  
-h1 {
+h1, h2, h3{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 64px;
   color: White;
+}
+
+h1 {
+  font-size: 64px;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 34px;
-  color: White;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
-  color: White;
 }
  
 p, li {
@@ -54,12 +74,14 @@ p, li {
 
 
 
-/* wraps pageContainer around content that is floated within it. */
+/* wraps pageContainer around content that is floated within it. 
 
 .pageContainer:after { 
   content: " ";
   display: table;
   clear: both;
 }
+
+*/
 
  

@@ -42,11 +42,12 @@ p, li {
 
 
 
-/* wraps pageContainer around content that is floated within it. */
+/* wraps pageContainer around content that is floated within it. 
 
 .pageContainer:after { 
   content: " ";
   display: table;
   clear: both;
 }
+*/
  

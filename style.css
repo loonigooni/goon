@@ -1,87 +1,82 @@
-html {
-  min-height: 100%;
-}
-
 body {
-  background: rgb(131,58,180);
-  background: linear-gradient(13deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%);
-  /* background-size: 100% */
-  width: 100%;
-}
-
-
-/*
-.pageWrapper {
-  background: rgb(131,58,180);
-  background: linear-gradient(13deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  background-size: cover;
-  min-height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-*/
-
-.pageContainer {
-  overflow: auto;
-  width: 100%;
-  margin: 20px auto 0 auto;
-  padding: 20px;
+  margin: 0;
   background-color: #000000;
 }
 
-
- 
-.imageContainer {
-  float: left;
-  width: 620px;
-}
- 
-.textContainer {
-  float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
+header {
+  background-color: #2d2d2d;
+  margin-bottom: 40px;
 }
 
-img {
-  width: 50%;
-}
- 
-h1, h2, h3{
+header h1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: White;
+  color: #e0e0e0;
+  text-align: center;
+  margin: 0;
+  padding-top: 8px; 
 }
 
-h1 {
-  font-size: 64px;
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
-h2 {
-  font-size: 34px;
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
 }
 
-h3 {
-  font-size: 22px;
-}
- 
-p, li {
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  color: #ad00c4;
+header nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bdbdbd;
+  text-decoration: none;
+  margin: 0 20px 0 0;
 }
 
-
-
-
-
-/* wraps pageContainer around content that is floated within it. 
-
-.pageContainer:after { 
-  content: " ";
-  display: table;
-  clear: both;
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
-*/
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
 
- 
+  header h1 {
+    margin: 8px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #e0e0e0;
+  }
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e0e0e0;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 0 10px 0 10px;
+}
+      
+
